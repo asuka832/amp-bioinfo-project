@@ -1,0 +1,18 @@
+# python
+__pycache__/
+*.pyc
+
+# vscode
+.vscode/
+
+# model weights
+*.bin
+*.pt
+*.pth
+
+# data
+data/raw/
+
+# environment
+venv/
+.env
