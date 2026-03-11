@@ -1,0 +1,22 @@
+name: amp_env
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8.20
+  - pytorch=1.13.1
+  - pytorch-cuda=11.7
+  - pandas=1.4.4
+  - tqdm=4.46.1
+  - transformers=4.27.1
+  - numpy=1.23.3
+  - scikit-learn=1.2.2
+  - matplotlib=3.4.3
+  - requests
+  - ftfy>=5.8
+  - huggingface_hub=0.13.4
+  - pip
+  - pip:
+      - git+https://github.com/gmihaila/ml_things.git --no-deps
