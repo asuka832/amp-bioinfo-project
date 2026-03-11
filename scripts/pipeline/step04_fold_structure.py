@@ -11,9 +11,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 def get_project_root() -> str:
-    current_script = os.path.abspath(__file__)
-    pipeline_dir = os.path.dirname(current_script)
-    return os.path.dirname(os.path.dirname(os.path.dirname(pipeline_dir)))
+    return os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 
 
 def fetch_structure(sequence: str, save_path: str) -> bool:

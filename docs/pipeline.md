@@ -6,12 +6,6 @@
 python main.py
 ```
 
-等价于：
-
-```bash
-python scripts/run_pipeline.py
-```
-
 执行顺序：
 1. `scripts/pipeline/step01_generate.py`
 2. `scripts/pipeline/step02_score_amp.py`

@@ -6,9 +6,7 @@ my_ai_seq = "WKLLKKLLKLLKKL"
 
 
 def get_project_root() -> str:
-    current_script = os.path.abspath(__file__)
-    pipeline_dir = os.path.dirname(current_script)
-    return os.path.dirname(os.path.dirname(os.path.dirname(pipeline_dir)))
+    return os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 
 
 def parse_blast_file(input_file: str):
