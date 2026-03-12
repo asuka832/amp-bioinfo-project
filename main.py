@@ -35,10 +35,6 @@ if __name__ == "__main__":
     # 2. 预测活性
     run_step("step02_score_amp.py", "AMPSorter 活性打分")
 
-    # 3. 综合筛选与毒性预测
-    run_step("step03_filter_toxicity.py", "理化筛选 + BioToxiPept 毒性预测")
-
-    # 4. 结构预测
-    run_step("step04_fold_structure.py", "ESMFold 结构预测")
+   
 
     print("\n全流程执行完毕！请查看 data/processed/final_candidates")
